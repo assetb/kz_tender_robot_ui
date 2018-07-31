@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.altaik.ui.priceoffers.view.MainController">
+    <children> 
+        <Button fx:id="startBtn" layoutX="276.0" layoutY="544.0" onAction="#StartAction" text="Запустить подачу" />
+        <Label fx:id="titleLbl" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <Label fx:id="lotNumberLbl" disable="true" layoutX="24.0" layoutY="25.0" text="Номера лотов (через запятую)" />
+        <Label fx:id="sumLbl" layoutX="23.0" layoutY="70.0" text="Цены лотов (через запятую)" />
+        <Label fx:id="authFileLbl" layoutX="24.0" layoutY="129.0" text="Файл ЭЦП для авторизации (AUTH)" />
+        <Label fx:id="gosFileLbl" layoutX="19.0" layoutY="221.0" text="Файл ЭЦП для подписания (GOS)" />
+        <TextField fx:id="lotNumber" disable="true" layoutX="274.0" layoutY="20.0" promptText="Введите номер лота по которому необходимо подать ценовое предлодение" />
+        <TextField fx:id="offerSum" layoutX="274.0" layoutY="65.0" prefHeight="31.0" prefWidth="382.0" />
+        <Button fx:id="authFileBtn" layoutX="276.0" layoutY="124.0" mnemonicParsing="false" onAction="#AuthFileChoose" prefHeight="31.0" prefWidth="382.0" text="Выбрать AUTH" />
+        <Button fx:id="gosFileBtn" layoutX="273.0" layoutY="216.0" mnemonicParsing="false" onAction="#GosFileChoose" prefHeight="31.0" prefWidth="382.0" text="Выбрать GOS" />
+      <Label layoutX="106.0" layoutY="166.0" text="Ввести пароль" />
+      <Label layoutX="109.0" layoutY="257.0" text="Ввести пароль" />
+      <TextField fx:id="authPassword" layoutX="274.0" layoutY="161.0" />
+      <TextField fx:id="gosPassword" layoutX="273.0" layoutY="252.0" />
+      <TextFlow layoutX="9.0" layoutY="353.0" prefHeight="174.0" prefWidth="664.0" />
+      <TextField fx:id="zakupPassword" layoutX="273.0" layoutY="312.0" />
+      <Label layoutX="24.0" layoutY="317.0" text="Ввести пароль на Гос. портал" />
+    </children>
+</AnchorPane>
